@@ -1,0 +1,15 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets">
+    <footer class="navbar-fixed-bottom">
+        <div class="container">
+            <div class="content text-muted">
+                Some footer
+            </div>
+            <div class="content right text-muted">
+                Version: #{metadata.projectVersion} |
+                Build Date: #{metadata.buildDate} |
+                View: #{view.viewId}
+            </div>
+        </div>
+    </footer>
+</ui:composition>

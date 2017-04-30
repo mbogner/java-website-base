@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="#{sessionBean.language}" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <f:facet name="first">
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title><ui:insert name="title">DefaultTitle</ui:insert></title>
+    </f:facet>
+    <f:facet name="middle">
+        <h:outputStylesheet library="bootstrap" name="css/bootstrap.css"/>
+        <h:outputStylesheet library="bootstrap" name="css/bootstrap-theme.css"/>
+        <h:outputStylesheet library="default" name="css/application.css"/>
+
+        <h:outputScript library="jquery" name="jquery.js"/>
+        <h:outputScript library="bootstrap" name="js/bootstrap.js"/>
+        <h:outputScript library="default" name="js/application.js"/>
+    </f:facet>
+    <f:facet name="last">
+        <h:outputStylesheet library="default" name="css/primeOverride.css"/>
+    </f:facet>
+</h:head>
+<h:body>
+    <ui:include src="nav.xhtml"/>
+    <div class="container" role="main">
+        <ui:insert name="body">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+            ipsum dolor sit amet.
+        </ui:insert>
+    </div>
+    <ui:include src="footer.xhtml"/>
+</h:body>
+</html>

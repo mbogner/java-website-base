@@ -1,0 +1,25 @@
+$header-height: 60px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: $header-height;
+  padding-bottom: 20px;
+  margin-bottom: $header-height;
+}
+
+footer {
+  background: #efebed;
+  div {
+    .content {
+      margin: 20px 0;
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+  }
+}
